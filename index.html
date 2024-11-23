@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeria Secreta</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_index.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="header_index">
+        <div class="texto-logo">
+            <img src="img/favicon.ico" alt="logotipo">
+            <h1>Joyeria Secreta</h1>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <div class="centrado">
+        <div class="contenedor">
+            <!-- Formulario de Registro -->
+            <div id="formulario-registro">
+
+                <h2>Registrate</h2>
+                <form id="registro-form">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder=" Ingresa tu apellido" required>
+
+                    <label for="genero">Género</label>
+                    <select id="genero" required>
+                        <option value="" disabled selected>Selecciona tu género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" placeholder="Crea una contraseña" required>
+
+
+                    <button type="submit">Registrarse</button>
+                </form>
+                <div class="enlace" onclick="mostrarLogin()">¿Ya tienes cuenta? Inicia sesión</div>
+            </div>
+
+            <!-- Formulario de Login -->
+            <div id="formulario-login" class="oculto">
+                <h2>Inicia Sesión</h2>
+                <form id="login-form">
+                    <label for="correo-login">Correo electronico</label>
+                    <input type="email" id="correo-login" required>
+
+                    <label for="contrasena-login">Contraseña</label>
+                    <input type="password" id="contrasena-login" required>
+
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+                <div class="enlace" onclick="mostrarRegistro()">¿No tienes cuenta? Registrate</div>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>
