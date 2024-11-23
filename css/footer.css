@@ -1,4 +1,4 @@
-footer{
+footer {
     position: relative;
     width: 100%;
     background: #ffd3d3;
@@ -10,7 +10,7 @@ footer{
     flex-direction: column;
 }
 
-.social-icon{
+.social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,38 +18,38 @@ footer{
     margin: 10x 5px;
     flex-wrap: wrap;
     list-style: none;
-    
 }
-.icon{
+
+.icon {
     list-style: none;
 }
-.icon{
+
+.icon {
     color: rgb(0, 0, 0);
     font-size: 32px;
     display: inline-block;
     margin: 0 10px;
     transition: 0.5s;
-   
 }
-.icon:hover{
+
+.icon:hover {
     transform: translateY(-10px);
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
     margin: 2px 0;
     flex-wrap: wrap;
- 
-
 }
 
-.menu-elem{
+.menu-elem {
     list-style: none;
 }
-.menu-icon{
+
+.menu-icon {
     color: rgb(0, 0, 0);
     font-size: 20px;
     display: inline-block;
@@ -57,17 +57,91 @@ footer{
     margin: 5px 10px;
     opacity: 0.75;
     transition: 0.3s;
-   
 }
 
-.menu-icon:hover{
+.menu-icon:hover {
     opacity: 1;
 }
-.text-footer{
+
+.text-footer {
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 20px;
-    
+}
+
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 5px;
+    }
+
+    .social-icon {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 28px;
+        margin: 5px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .text-footer {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px;
+    }
+
+    .social-icon {
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+
+    .icon {
+        font-size: 30px;
+        margin: 5px 8px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .text-footer {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .icon {
+        font-size: 36px;
+    }
+
+    .menu-icon {
+        font-size: 22px;
+    }
+
+    .text-footer {
+        font-size: 22px;
+    }
 }

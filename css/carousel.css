@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 100%;
 }
 
@@ -6,7 +6,6 @@
     background-color: #f7f4e9;
     padding-block: 70px;
 }
-
 
 .carousel {
     max-width: 1000px;
@@ -20,8 +19,6 @@
     gap: 50px;
     padding: 20px;
 }
-
-
 
 .carousel-item {
     min-width: 300px;
@@ -46,21 +43,63 @@
 }
 
 .carousel-item div button {
- 
-    background:#ffd4df;
+    background: #ffd4df;
     width: 100%;
     padding: 10px 5px;
     border-radius: 10px;
     border: 1px solid rgb(82, 117, 119);
     font-weight: bold;
-    color:rgb(5, 5, 5);
-    
-    
+    color: rgb(5, 5, 5);
 }
-.text-carrosel{
+
+.text-carrosel {
     padding: 20px;
     color: #2f2f2f;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .carousel-wrapper {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .carousel-item {
+        min-width: 200px;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .products {
+        padding-block: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-wrapper {
+        gap: 30px;
+    }
+
+    .carousel-item {
+        min-width: 250px;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-wrapper {
+        gap: 60px;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
 }
