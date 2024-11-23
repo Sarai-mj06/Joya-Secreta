@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    background-image: url(../img/Fondos/fondo_4.jpg);
+    height: 100px;
+}
+
+/* estilo seccion bienvenida */
+.container1{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Fondos/fondo_1.jpg);
+    background-size: cover;
+    
+
+}
+/* estilos titulos y parrafos  */
+.titulo {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+p{
+
+    font-size: 18px;
+    color: #000000;
+    padding: 0 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: unset;
+    
+}
+
+/* estilo sección de servicios */
+.container2{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.lista-servicios{
+    color: #000000;
+}
